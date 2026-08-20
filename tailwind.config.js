@@ -7,14 +7,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        'barber-bg': '#0f1115',      // Fondo casi negro, tipo carbón
-        'barber-panel': '#1a1d24',   // Fondo ligeramente más claro para botones
-        'barber-silver': '#e2e8f0',  // Plata brillante y limpio
-        'barber-silver-dark': '#94a3b8', // Plata oscuro para textos secundarios
+        'barber-bg': '#0f1115',      
+        'barber-panel': '#1a1d24',   
+        'barber-silver': '#e2e8f0',  
+        'barber-silver-dark': '#94a3b8', 
+        'barber-red': '#8B1C1C', // <-- Regresamos el rojo sangre/vino del logo
       },
       fontFamily: {
-        oswald: ['Oswald', 'sans-serif'], // Títulos imponentes
-        inter: ['Inter', 'sans-serif'],   // Textos legibles y modernos
+        oswald: ['Oswald', 'sans-serif'], 
+        inter: ['Inter', 'sans-serif'],   
       }
     },
   },

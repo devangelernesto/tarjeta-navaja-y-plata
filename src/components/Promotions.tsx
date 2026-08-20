@@ -3,11 +3,12 @@ import { FaTrophy, FaHandshake, FaShareAlt } from 'react-icons/fa';
 
 export const Promotions = () => {
 
+  // Iconos en rojo para que destaquen como "Llamados a la acción"
   const renderPromoIcon = (id: number) => {
     switch(id) {
-      case 1: return <FaTrophy className="text-yellow-600 text-2xl drop-shadow-md" />;
-      case 2: return <FaHandshake className="text-barber-silver-dark text-2xl drop-shadow-md" />;
-      case 3: return <FaShareAlt className="text-barber-silver text-2xl drop-shadow-md" />;
+      case 1: return <FaTrophy className="text-barber-red text-2xl drop-shadow-md" />;
+      case 2: return <FaHandshake className="text-barber-red text-2xl drop-shadow-md" />;
+      case 3: return <FaShareAlt className="text-barber-red text-2xl drop-shadow-md" />;
       default: return null;
     }
   };
@@ -30,11 +31,11 @@ export const Promotions = () => {
         {businessData.promotions.map((promo) => (
           <div 
             key={promo.id} 
-            className="bg-gradient-to-br from-[#1a1d24] to-black border border-gray-700 p-5 rounded-xl shadow-lg relative overflow-hidden"
+            className="bg-gradient-to-br from-[#1a1d24] to-black border border-gray-800 p-5 rounded-xl shadow-lg relative overflow-hidden transition-all hover:border-gray-600"
           >
-            <div className="absolute -top-10 -right-10 w-24 h-24 bg-white opacity-5 rounded-full blur-2xl"></div>
+            {/* Brillo rojo sutil en el fondo */}
+            <div className="absolute -top-10 -right-10 w-32 h-32 bg-barber-red opacity-5 rounded-full blur-3xl"></div>
             
-            {/* Título con icono dinámico */}
             <h3 className="text-barber-silver font-oswald text-xl tracking-wide mb-3 relative z-10 flex items-center gap-3">
               {renderPromoIcon(promo.id)}
               {promo.title}
@@ -45,7 +46,7 @@ export const Promotions = () => {
             </p>
             
             {promo.quote && (
-              <div className="mt-4 border-l-2 border-gray-500 pl-3 italic text-gray-500 text-xs font-inter relative z-10">
+              <div className="mt-4 border-l-2 border-barber-red pl-3 italic text-gray-500 text-xs font-inter relative z-10">
                 {promo.quote}
               </div>
             )}
