@@ -7,11 +7,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        'barber-black': '#0D0D0D',
-        'barber-dark': '#1A1A1A',
-        'barber-silver': '#D1D5DB',
-        'barber-silver-light': '#F3F4F6',
-        'barber-red': '#8B1C1C',
+        'barber-bg': '#0f1115',      // Fondo casi negro, tipo carbón
+        'barber-panel': '#1a1d24',   // Fondo ligeramente más claro para botones
+        'barber-silver': '#e2e8f0',  // Plata brillante y limpio
+        'barber-silver-dark': '#94a3b8', // Plata oscuro para textos secundarios
+      },
+      fontFamily: {
+        oswald: ['Oswald', 'sans-serif'], // Títulos imponentes
+        inter: ['Inter', 'sans-serif'],   // Textos legibles y modernos
       }
     },
   },
