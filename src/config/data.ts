@@ -1,5 +1,4 @@
 // src/config/data.ts
-import img1 from '../assets/ID1.jpeg'; 
 import img5 from '../assets/ID4.jpeg'; 
 import img2 from '../assets/ID5.jpeg';
 import img4 from '../assets/ID6.jpeg'; // Movido aquí para seguir el orden
